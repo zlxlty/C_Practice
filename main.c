@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "string_test.h"
 
 int main(int argc, char const *argv[]) {
@@ -37,8 +36,12 @@ int main(int argc, char const *argv[]) {
 
     printf("%d\n", strcmp1(pa, pb));
 
-    printf("%s\n", strcat1(pa, pb));
+    printf("%s\n", strncat1(pa, pb, 20));
 
+    char x[10] = "Hello";
+    char y[10] = "Hello";
+
+    printf("%d\n", strend(x, y));
     // printf("%s\n", pa);
 
     return 0;
