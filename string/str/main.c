@@ -5,6 +5,10 @@ int main(int argc, char const *argv[]) {
 
     char a[] = "Hello world";
 
+    a[1] = 'A';
+
+    printf("%s\n", a);
+
     char pa[50], pb[50];
 
     // pa = &a[0];
