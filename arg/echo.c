@@ -2,9 +2,9 @@
 
 int main(int argc, char const *argv[]) {
 
-    while (argc-- > 1)
+    while (--argc)
         printf((argc > 1) ? "%s " : "%s", *++argv);
     printf("\n");
     return 0;
-    
+
 }

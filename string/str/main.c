@@ -21,7 +21,7 @@ int main(int argc, char const *argv[]) {
 
         Compiler marks the constant string ("Hello world") as read-only
 
-        https://stackoverflow.com/questions/2346806/what-is-a-segmentation-fault
+        https://stackoverflow.com/questions/2346806/what-is-a-segmentation-faultv
     */
 
     printf("%s\n", pa);
