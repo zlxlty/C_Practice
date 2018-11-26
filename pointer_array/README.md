@@ -4,7 +4,7 @@ NOTE
 ```c
 int string[][10];
 int *string[10];
-int (* string)[10];
+int (*string)[10];
 ```  
 ### They are largely different!
 ------------------
@@ -19,15 +19,16 @@ string:
 
 
 |10 chars|10 chars|10 chars|...|10 chars|
-|---|---|---|---
+|---|---|---|---|---|
 |0|10|20|...|50|
 ----------------------------
 ##### array pointer:
 ```c
-int (* string)[10];
+int (*string)[10];
 ```
 string  -->  |10 chars|
 *****
+
 ##### pointers array:
 ```c
 int *string[10]
