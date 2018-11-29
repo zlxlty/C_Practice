@@ -14,7 +14,6 @@ int main(int argc, char const *argv[]) {
 
     if ((nlines = readlines(lineptr, MAXLINE)) >= 0)
     {
-        // writelines(lineptr, nlines);
         qsort1(lineptr, 0, nlines-1);
         writelines(lineptr, nlines);
         return 0;
