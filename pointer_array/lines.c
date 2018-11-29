@@ -27,14 +27,11 @@ int readlines(char *lineptr[], int maxlines)
     nlines = 0;
     while((len = getline1(line, MAXLEN)) > 0)
     {
-        // printf("%d\n", len);
         if (nlines > maxlines || (p = alloc(len+1)) == NULL)
             return -1;
         else{
             line[len] = '\0';
-            // printf("%s\n", line);
             strcpy(p, line);
-            // printf("%s\n", p);
             lineptr[nlines++] = p;
         }
     }
