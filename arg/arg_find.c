@@ -2,7 +2,8 @@
 #include <string.h>
 #include "parray.h"
 
-int getline1(char *s, const int lim);
+extern int getline1(char *s, const int lim);
+extern char *alloc(const int len);
 
 int main(int argc, char const *argv[]) {
 
@@ -16,19 +17,16 @@ int main(int argc, char const *argv[]) {
     if (argc != 2)
         printf("Usage: find pattern\n");
     else
-        i = 0;
-        while (getline1(line[i], MAXLEN) > 0)
-            i++;
-            
-        i = 0;
-        while (strlen(line[i]) > 1)
+        for (i = 0; getline1(line[i], MAXLEN) > 0; i++)
+            ;
+
+        for (i = 0; strlen(line[i]) > 1; i++)
         {
             if (strstr(line[i], argv[1]) != NULL)
             {
                 printf("%s", line[i]);
                 found++;
             }
-            i++;
         }
     printf("%d is found\n", found);
     return found;
