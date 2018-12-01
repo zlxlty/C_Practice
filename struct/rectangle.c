@@ -27,6 +27,9 @@ Rect canonrect(Rect r)
     return temp;
 }
 
-// int main(int argc, char const *argv[]) {
-//     return 0;
-// }
+#ifdef DEBUG
+    int main(int argc, char const *argv[]){
+        printf("Hello\n");
+        return 0;
+    }
+#endif
