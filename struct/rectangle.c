@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <math.h>
 #include "rectangle.h"
 
 #define min(a, b) ((a) < (b) ? (a) : (b))
