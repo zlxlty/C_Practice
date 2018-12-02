@@ -14,5 +14,10 @@ alloc.o : alloc.c parray.h
 lines.o : lines.c parray.h
 	gcc -c lines.c
 
-clean_obj :
+.PHONY : clean_objs clean_all
+
+clean_objs :
 	rm $(objects)
+
+clean_all :
+	rm find_plus $(objects)

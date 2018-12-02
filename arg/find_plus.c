@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "parray.h"
 
 extern int getline1(char *s, const int lim);

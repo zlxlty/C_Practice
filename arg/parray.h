@@ -1,6 +1,9 @@
 #ifndef _PARRAY_H_
 #define  _PARRAY_H_
 
+#include <stdio.h>
+#include <string.h>
+
 #define MAXLINE 50
 #define MAXLEN 100
 #define ALLOCSIZE 100000

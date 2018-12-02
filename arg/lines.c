@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <string.h>
 #include "parray.h"
 
 extern char *alloc(const int len);
