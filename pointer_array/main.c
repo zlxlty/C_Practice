@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "parray.h"
 
 extern int readlines(char *lineptr[], int maxlines);

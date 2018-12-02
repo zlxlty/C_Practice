@@ -1,4 +1,3 @@
-#include <string.h>
 #include "parray.h"
 
 void swap(char *v[], int i, int j)
