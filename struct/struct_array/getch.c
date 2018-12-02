@@ -19,7 +19,7 @@ void ungetch(int c)
 int getword(char *word, int lim)
 {
     int c;
-    char *w = word;
+    char *w = word; //we can not use "++" on array, therefore we assign its value to a pointer
 
     while (isspace(c = getch()))
         ;
