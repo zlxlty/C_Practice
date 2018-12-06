@@ -3,6 +3,7 @@
 int main(void) {
 
     struct nlist *temp;
+    int index;
 
     install("Tianyi", "Sky");
     install("Yufeng", "Steven");
@@ -14,6 +15,10 @@ int main(void) {
 
     temp = lookup("Ruihan");
     printf("%s\n", temp->defn);
+
+    undef("Ruihan");
+    temp = lookup("Ruihan");
+    printf("%s\n", temp == NULL ? "succeeded" : "fail");
 
     return 0;
 }

@@ -18,5 +18,6 @@ unsigned hash(char *s);
 char *strdup1(char *s);
 struct nlist *lookup(char *s);
 struct nlist *install(char *name, char *defn);
+int undef(char *name);
 
 #endif
