@@ -25,7 +25,7 @@ int main(int argc, char const *argv[]) {
 
     if (argc <= 2)
     {
-        fprintf(stderr, "%s: two files required\n", prog);
+        fprintf(stderr, "%s: two files are required\n", prog);
         exit(1);
     } else {
         while (--argc > 0)
