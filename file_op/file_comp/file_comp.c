@@ -51,7 +51,6 @@ int main(int argc, char const *argv[]) {
             {
                 if (filen1 == NULL)
                 {
-                    printf("file: %s\n", *argv);
                     filen1 = (char *)malloc(sizeof(char) * MAXLEN);
                     strcpy(filen1, *argv);
                 }
@@ -63,7 +62,6 @@ int main(int argc, char const *argv[]) {
                 else
                     fprintf(stderr, "%s: %s is excluded\n", prog, *argv);
             }
-            printf("argv: %s\n", *argv);
         }
     }
 
