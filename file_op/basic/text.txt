@@ -1,0 +1,5 @@
+Author: Tianyi_Lu
+
+This is a test for file operation in language C
+
+Hello_world!
