@@ -14,7 +14,7 @@ int main(int argc, char const *argv[]) {
 
     FILE *fp1;
     FILE *fp2;
-    long linenum;
+    register long linenum;
     char c;
     char const *prog = argv[0];
     char *filen1 = NULL;
